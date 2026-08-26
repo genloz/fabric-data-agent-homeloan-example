@@ -29,14 +29,19 @@ The folder follows the Fabric data agent definition layout:
 
 - `Files/Config/data_agent.json`
 - `Files/Config/draft/stage_config.json`
-- one Lakehouse data source folder with `datasource.template.json`
-- `fewshots.json`
 - `publish_info.json`
 
-The data source element IDs are created by Fabric during schema discovery, so
-the deployment script uses the Data Agent SDK to add the Lakehouse and select
-the `home_loans` table. The template documents the intended data source
-description and instructions for later Git/ALM review.
+The Git definition intentionally starts without a data source. Fabric requires
+Lakehouse data source folders to contain a generated `datasource.json` with
+physical workspace, artifact, table, and column IDs. Committing a placeholder
+file in that location makes the entire item invalid during Git synchronization.
+
+The portable data source template and few-shot queries are stored under
+`deployment/templates`. After the base items are synchronized, the deployment
+script uses the Data Agent SDK to add the Lakehouse, discover and select the
+`home_loans` table, add the examples, and publish the agent. A later commit from
+Fabric can then capture the generated `lakehouse-tables-HomeLoansLakehouse`
+folder as a valid environment-specific Data Agent definition.
 
 Do not directly edit a generated `published` folder. Update draft configuration,
 validate it, and publish through Fabric.

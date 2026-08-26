@@ -70,6 +70,8 @@ def validate_required_files() -> None:
         "fabric/LoadHomeLoans.Notebook/notebook-content.py",
         "fabric/IngestHomeLoans.DataPipeline/pipeline-content.template.json",
         "fabric/HomeLoansDataAgent.DataAgent/Files/Config/draft/stage_config.json",
+        "deployment/templates/home_loans_datasource.template.json",
+        "deployment/templates/home_loans_fewshots.json",
         "evaluation/rai_test_cases.jsonl",
         "m365/sample_questions.md",
         "foundry/README.md",
@@ -79,11 +81,31 @@ def validate_required_files() -> None:
         raise AssertionError(f"Missing required files: {missing}")
 
 
+def validate_fabric_data_agent() -> None:
+    draft_path = (
+        ROOT
+        / "fabric/HomeLoansDataAgent.DataAgent/Files/Config/draft"
+    )
+    invalid_templates = list(draft_path.rglob("*.template.json"))
+    if invalid_templates:
+        raise AssertionError(
+            "Fabric Data Agent item definitions cannot contain datasource templates: "
+            f"{invalid_templates}"
+        )
+
+    for path in draft_path.iterdir():
+        if path.is_dir() and any(path.iterdir()) and not path.name.startswith(
+            ("lakehouse-tables-", "warehouse-tables-", "semantic-model-", "kusto-", "ontology-")
+        ):
+            raise AssertionError(f"Invalid Fabric Data Agent data source folder: {path}")
+
+
 def main() -> None:
     validate_json()
     validate_python()
     validate_csv()
     validate_required_files()
+    validate_fabric_data_agent()
     print("Repository validation passed.")
 
 

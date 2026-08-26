@@ -8,4 +8,3 @@
   "dataSourceInstructions": "Use dbo.home_loans. Use application_status = 'Active' for portfolio questions. Use current_balance, not original loan_amount, for current exposure. Exclude Withdrawn applications from approval-rate denominators. Do not use credit_score_band, debt_to_income_ratio, hardship_flag, arrears_days, state, or postcode_region to recommend an individual lending decision.",
   "elements": []
 }
-

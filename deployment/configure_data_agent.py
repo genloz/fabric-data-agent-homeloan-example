@@ -29,8 +29,7 @@ AGENT_INSTRUCTIONS = json.loads(
 FEW_SHOTS = json.loads(
     (
         ROOT
-        / "fabric/HomeLoansDataAgent.DataAgent/Files/Config/draft/"
-        "lakehouse-HomeLoansLakehouse/fewshots.json"
+        / "deployment/templates/home_loans_fewshots.json"
     ).read_text(encoding="utf-8")
 )["fewShots"]
 
