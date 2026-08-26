@@ -81,23 +81,12 @@ def validate_required_files() -> None:
         raise AssertionError(f"Missing required files: {missing}")
 
 
-def validate_fabric_data_agent() -> None:
-    draft_path = (
-        ROOT
-        / "fabric/HomeLoansDataAgent.DataAgent/Files/Config/draft"
-    )
-    invalid_templates = list(draft_path.rglob("*.template.json"))
-    if invalid_templates:
+def validate_fabric_data_agent_disabled() -> None:
+    platform_path = ROOT / "fabric/HomeLoansDataAgent.DataAgent/.platform"
+    if platform_path.exists():
         raise AssertionError(
-            "Fabric Data Agent item definitions cannot contain datasource templates: "
-            f"{invalid_templates}"
+            "HomeLoansDataAgent must remain excluded from Fabric Git integration."
         )
-
-    for path in draft_path.iterdir():
-        if path.is_dir() and any(path.iterdir()) and not path.name.startswith(
-            ("lakehouse-tables-", "warehouse-tables-", "semantic-model-", "kusto-", "ontology-")
-        ):
-            raise AssertionError(f"Invalid Fabric Data Agent data source folder: {path}")
 
 
 def main() -> None:
@@ -105,7 +94,7 @@ def main() -> None:
     validate_python()
     validate_csv()
     validate_required_files()
-    validate_fabric_data_agent()
+    validate_fabric_data_agent_disabled()
     print("Repository validation passed.")
 
 
