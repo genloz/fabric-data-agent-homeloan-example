@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "EvaluateHomeLoansDataAgent",
+    "description": "Runs accuracy and responsible AI evaluations for HomeLoansDataAgent and stores results in HomeLoansLakehouse."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d205f5d3-a29f-4a70-9397-dcff62db70d9"
+  }
+}
