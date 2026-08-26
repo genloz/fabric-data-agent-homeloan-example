@@ -1,0 +1,327 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "49ccdb02-54c8-4da0-a44c-ccb91c6a4168",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "HomeLoansLakehouse",
+  "type": "lakehouse_tables",
+  "userDescription": null,
+  "metadata": null,
+  "elements": [
+    {
+      "id": "055bc516-1a41-43bf-820c-de19b08c9392",
+      "is_selected": false,
+      "display_name": "Schemas",
+      "type": "schema_grouping",
+      "description": null,
+      "children": [
+        {
+          "id": "ba5c5d8c-66ec-4c3b-96e2-13255d29b8e3",
+          "is_selected": false,
+          "display_name": "dbo",
+          "type": "lakehouse_tables.schema",
+          "description": null,
+          "children": [
+            {
+              "id": "8da36a8a-d192-4659-a6e1-5d45e820caa4",
+              "is_selected": false,
+              "display_name": "Tables",
+              "type": "table_grouping",
+              "description": null,
+              "children": [
+                {
+                  "id": "d78e99c9-8461-4885-bf09-abdd5061e858",
+                  "is_selected": true,
+                  "display_name": "home_loans",
+                  "type": "lakehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "56890ac8-e0c1-46a0-bd55-ce6388d8f3ec",
+                      "is_selected": true,
+                      "display_name": "loan_id",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "551ce7ab-311e-4d2d-acd4-70b4bda696c9",
+                      "is_selected": true,
+                      "display_name": "application_date",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "ec73961e-cf72-4a26-b94c-62fd2b490801",
+                      "is_selected": true,
+                      "display_name": "settlement_date",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "73e30685-de1b-4757-b99e-9d04fa37c902",
+                      "is_selected": true,
+                      "display_name": "state",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "ac1ed43d-c007-474b-bc2f-ba8bf4f14fcd",
+                      "is_selected": true,
+                      "display_name": "postcode_region",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b1649ed4-fc46-4e0d-973c-5c7f3389194d",
+                      "is_selected": true,
+                      "display_name": "property_type",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6b963e9b-775b-4abc-a923-862fc291c503",
+                      "is_selected": true,
+                      "display_name": "occupancy_type",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "99d870a0-35e0-4590-81a8-f4d20be27192",
+                      "is_selected": true,
+                      "display_name": "loan_purpose",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "15db1944-921e-4274-9ae5-04e0221a7792",
+                      "is_selected": true,
+                      "display_name": "first_home_buyer",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "bit",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "70b8b207-7f59-4509-a248-37e018e01605",
+                      "is_selected": true,
+                      "display_name": "channel",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "0bd6f32f-245c-42db-93a9-69b199f987d9",
+                      "is_selected": true,
+                      "display_name": "loan_amount",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "decimal",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "020ad8a2-85b7-4930-9f96-ffcc269dd017",
+                      "is_selected": true,
+                      "display_name": "property_value",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "decimal",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "1d3d27c7-8d05-47a9-b8f9-905256805f84",
+                      "is_selected": true,
+                      "display_name": "deposit_amount",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "decimal",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "f3d4a9c9-4a10-4782-b87a-20c186475867",
+                      "is_selected": true,
+                      "display_name": "lvr_pct",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "decimal",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "4b858945-d9ef-4697-a9ad-b10ed2abeb31",
+                      "is_selected": true,
+                      "display_name": "interest_rate_pct",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "decimal",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "5179efa6-8ee6-42e4-8561-7a1a82011091",
+                      "is_selected": true,
+                      "display_name": "term_years",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "5456d20b-595f-4c65-b3c8-1284be234342",
+                      "is_selected": true,
+                      "display_name": "repayment_type",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "37e4f48d-f276-4e3e-9ce8-3f62c791b7c6",
+                      "is_selected": true,
+                      "display_name": "monthly_repayment",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "decimal",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "cac53fbd-a90f-4c24-9506-c06e91ebbc4a",
+                      "is_selected": true,
+                      "display_name": "application_status",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "f11f66e2-c957-4808-b753-4c9d5275cecd",
+                      "is_selected": true,
+                      "display_name": "days_to_decision",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6a4b19cd-5f53-41bd-8fba-e2a7a007528d",
+                      "is_selected": true,
+                      "display_name": "credit_score_band",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "dc55896f-73bf-402a-9483-e2046da32672",
+                      "is_selected": true,
+                      "display_name": "debt_to_income_ratio",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "decimal",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "3dde7b49-2afb-4b67-9354-d7e619934d9f",
+                      "is_selected": true,
+                      "display_name": "arrears_days",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "292b4970-e20b-4b2d-99fe-a1b0fc0499dd",
+                      "is_selected": true,
+                      "display_name": "hardship_flag",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "bit",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "e4b17900-ceb1-432a-be64-5b6275e90296",
+                      "is_selected": true,
+                      "display_name": "annual_household_income",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "decimal",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "ae0a76a8-7dc3-4439-a838-bd6cc5199893",
+                      "is_selected": true,
+                      "display_name": "current_balance",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "decimal",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "1542ea90-6648-4cf0-bc83-272730303948",
+                      "is_selected": true,
+                      "display_name": "application_month",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b9fa03bf-9308-411e-be96-a002d6104b7d",
+                      "is_selected": true,
+                      "display_name": "settlement_month",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "cdd32de8-5523-4f5e-8d80-2a6884d0500d",
+                      "is_selected": true,
+                      "display_name": "is_high_lvr",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "bit",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "2a111cda-2d7d-45d8-834a-2e38f971abd5",
+                      "is_selected": true,
+                      "display_name": "is_in_arrears",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "bit",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "0a16ead8-207e-4c11-8b2c-97bbc764e726",
+                      "is_selected": true,
+                      "display_name": "delinquency_band",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

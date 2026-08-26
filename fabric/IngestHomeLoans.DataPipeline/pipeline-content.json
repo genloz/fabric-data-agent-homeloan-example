@@ -1,5 +1,4 @@
 {
-  "name": "IngestHomeLoans",
   "properties": {
     "description": "Runs the LoadHomeLoans notebook to ingest the GitHub CSV into the HomeLoansLakehouse Delta table.",
     "parameters": {
@@ -67,4 +66,3 @@
     ]
   }
 }
-

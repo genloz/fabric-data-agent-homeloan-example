@@ -1,0 +1,4 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/publishInfo/1.0.0/schema.json",
+  "description": "Home Loans Portfolio Analyst: governed, read-only analytics over synthetic Australian home loans data. Return exact metrics and do not make individual credit decisions."
+}

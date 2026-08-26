@@ -6,14 +6,23 @@
 # META   "kernel_info": {
 # META     "name": "synapse_pyspark"
 # META   },
-# META   "dependencies": {}
+# META   "dependencies": {
+# META     "lakehouse": {
+# META       "default_lakehouse": "78deb54a-9f5c-4859-828e-d0ea0fc7c2a5",
+# META       "default_lakehouse_name": "HomeLoansLakehouse",
+# META       "default_lakehouse_workspace_id": "",
+# META       "known_lakehouses": [
+# META         {
+# META           "id": "78deb54a-9f5c-4859-828e-d0ea0fc7c2a5"
+# META         }
+# META       ]
+# META     }
+# META   }
 # META }
 
 # CELL ********************
 
-source_csv_url = "https://raw.githubusercontent.com/REPLACE_ORG/REPLACE_REPO/main/data/home_loans.csv"
-workspace_id = "REPLACE_WORKSPACE_ID"
-lakehouse_id = "REPLACE_LAKEHOUSE_ID"
+source_csv_url = "https://raw.githubusercontent.com/genloz/fabric-data-agent-homeloan-example/refs/heads/main/data/home_loans.csv"
 table_name = "home_loans"
 write_mode = "overwrite"
 
@@ -21,10 +30,7 @@ write_mode = "overwrite"
 
 # META {
 # META   "language": "python",
-# META   "language_group": "synapse_pyspark",
-# META   "tags": [
-# META     "parameters"
-# META   ]
+# META   "language_group": "synapse_pyspark"
 # META }
 
 # CELL ********************
@@ -50,10 +56,6 @@ if parsed_url.scheme != "https" or parsed_url.hostname != "raw.githubusercontent
     raise ValueError(
         "source_csv_url must be an HTTPS raw.githubusercontent.com URL for this demo."
     )
-if not workspace_id or workspace_id.startswith("REPLACE_"):
-    raise ValueError("A Fabric workspace ID is required.")
-if not lakehouse_id or lakehouse_id.startswith("REPLACE_"):
-    raise ValueError("A Fabric lakehouse ID is required.")
 if not table_name.replace("_", "").isalnum():
     raise ValueError("table_name may only contain letters, numbers, and underscores.")
 if write_mode not in {"overwrite", "append"}:
@@ -62,11 +64,10 @@ if write_mode not in {"overwrite", "append"}:
 response = requests.get(source_csv_url, timeout=60)
 response.raise_for_status()
 
-one_lake_root = (
-    f"abfss://{workspace_id}@onelake.dfs.fabric.microsoft.com/{lakehouse_id}"
-)
-raw_file_path = f"{one_lake_root}/Files/home_loans/home_loans.csv"
-table_path = f"{one_lake_root}/Tables/dbo/{table_name}"
+# Use the default attached lakehouse (HomeLoansLakehouse) via relative paths
+raw_file_path = "Files/home_loans/home_loans.csv"
+table_path = f"Tables/dbo/{table_name}"
+
 notebookutils.fs.put(raw_file_path, response.text, overwrite=True)
 
 schema = StructType(
