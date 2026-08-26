@@ -1,0 +1,5 @@
+{
+  "$schema": "1.0.0",
+  "description": "Home Loans Portfolio Analyst: governed, read-only analytics over synthetic Australian home loans data. Return exact metrics and do not make individual credit decisions."
+}
+

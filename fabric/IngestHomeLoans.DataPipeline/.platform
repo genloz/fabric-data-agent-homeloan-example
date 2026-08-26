@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "IngestHomeLoans",
+    "description": "Orchestrates the home loans CSV ingestion notebook."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "31d6319f-1c21-4cdd-972c-68d4f73fd600"
+  }
+}
+

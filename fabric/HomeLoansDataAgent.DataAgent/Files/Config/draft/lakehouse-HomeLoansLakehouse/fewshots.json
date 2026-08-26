@@ -1,0 +1,56 @@
+{
+  "$schema": "1.0.0",
+  "fewShots": [
+    {
+      "id": "53bcbd60-3b53-42dd-a85e-a1527dd62242",
+      "question": "What is the current portfolio balance for active home loans?",
+      "query": "SELECT SUM(current_balance) AS current_portfolio_balance_aud FROM dbo.home_loans WHERE application_status = 'Active';"
+    },
+    {
+      "id": "4c00dc0f-6f2a-46e0-adba-eb4202ae9244",
+      "question": "How many active home loans are in the portfolio?",
+      "query": "SELECT COUNT(*) AS active_loan_count FROM dbo.home_loans WHERE application_status = 'Active';"
+    },
+    {
+      "id": "fbbfbbe8-aa72-46a5-87ac-aa659bd08a73",
+      "question": "What is the average LVR for active loans?",
+      "query": "SELECT AVG(lvr_pct) AS average_lvr_pct FROM dbo.home_loans WHERE application_status = 'Active';"
+    },
+    {
+      "id": "42a4530b-d3ad-49a6-b40e-5ac6f865a3f7",
+      "question": "Which state has the largest current portfolio balance?",
+      "query": "SELECT TOP 1 state, SUM(current_balance) AS current_portfolio_balance_aud FROM dbo.home_loans WHERE application_status = 'Active' GROUP BY state ORDER BY current_portfolio_balance_aud DESC;"
+    },
+    {
+      "id": "1d0677df-5260-435c-bdb5-2eecf7504c64",
+      "question": "What percentage of active loans are first home buyers?",
+      "query": "SELECT 100.0 * SUM(CASE WHEN first_home_buyer = 1 THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0) AS first_home_buyer_pct, SUM(CASE WHEN first_home_buyer = 1 THEN 1 ELSE 0 END) AS first_home_buyer_count, COUNT(*) AS active_loan_count FROM dbo.home_loans WHERE application_status = 'Active';"
+    },
+    {
+      "id": "35b89b67-6e28-4b7d-9a0f-c14c6dca12d2",
+      "question": "What is the arrears rate across active loans?",
+      "query": "SELECT 100.0 * SUM(CASE WHEN arrears_days > 0 THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0) AS arrears_rate_pct, SUM(CASE WHEN arrears_days > 0 THEN 1 ELSE 0 END) AS loans_in_arrears, COUNT(*) AS active_loan_count FROM dbo.home_loans WHERE application_status = 'Active';"
+    },
+    {
+      "id": "42c68088-2c38-4d53-8111-0d5a9741b157",
+      "question": "How many active loans are 30 or more days in arrears?",
+      "query": "SELECT COUNT(*) AS loans_30_plus_days_in_arrears FROM dbo.home_loans WHERE application_status = 'Active' AND arrears_days >= 30;"
+    },
+    {
+      "id": "b53824ed-c8d2-4a9d-8650-402d62436e56",
+      "question": "What is the total balance of active loans with LVR at or above 80%?",
+      "query": "SELECT SUM(current_balance) AS high_lvr_current_balance_aud FROM dbo.home_loans WHERE application_status = 'Active' AND lvr_pct >= 80;"
+    },
+    {
+      "id": "71323a21-d64d-4a4d-92bd-33adf3cca55c",
+      "question": "Show approval rate by channel.",
+      "query": "SELECT channel, 100.0 * SUM(CASE WHEN application_status IN ('Active', 'Approved') THEN 1 ELSE 0 END) / NULLIF(SUM(CASE WHEN application_status IN ('Active', 'Approved', 'Declined') THEN 1 ELSE 0 END), 0) AS approval_rate_pct FROM dbo.home_loans GROUP BY channel ORDER BY approval_rate_pct DESC;"
+    },
+    {
+      "id": "8f13e19f-a40e-4d0d-b130-d81626f12458",
+      "question": "Which settlement month had the most active loan originations?",
+      "query": "SELECT TOP 1 settlement_month, COUNT(*) AS active_loan_count FROM dbo.home_loans WHERE application_status = 'Active' AND settlement_month IS NOT NULL GROUP BY settlement_month ORDER BY active_loan_count DESC, settlement_month DESC;"
+    }
+  ]
+}
+

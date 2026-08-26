@@ -1,0 +1,11 @@
+question,expected_answer
+What is the current portfolio balance for active home loans?,"AUD 152,717,504.21"
+How many active home loans are in the portfolio?,249 active loans
+What is the average LVR for active loans?,75.89%
+Which state has the largest current portfolio balance?,"VIC - AUD 56,557,398.50"
+What percentage of active loans are first home buyers?,31.73% (79 of 249)
+What is the arrears rate across active loans?,10.44% (26 of 249)
+How many active loans are 30 or more days in arrears?,15 active loans
+What is the total balance of active loans with LVR at or above 80%?,"AUD 69,577,322.65"
+Which channel has the fastest average decision time for decisioned applications?,Digital - 4.40 days
+Which settlement month had the most active loan originations?,2025-07 - 21 active loans

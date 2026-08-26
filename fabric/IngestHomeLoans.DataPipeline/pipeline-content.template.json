@@ -1,0 +1,70 @@
+{
+  "name": "IngestHomeLoans",
+  "properties": {
+    "description": "Runs the LoadHomeLoans notebook to ingest the GitHub CSV into the HomeLoansLakehouse Delta table.",
+    "parameters": {
+      "sourceCsvUrl": {
+        "type": "string",
+        "defaultValue": "<RAW_CSV_URL>"
+      },
+      "tableName": {
+        "type": "string",
+        "defaultValue": "home_loans"
+      },
+      "writeMode": {
+        "type": "string",
+        "defaultValue": "overwrite"
+      }
+    },
+    "activities": [
+      {
+        "name": "Load home loans into lakehouse",
+        "type": "TridentNotebook",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 2,
+          "retryIntervalInSeconds": 60,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "notebookId": "<NOTEBOOK_ID>",
+          "workspaceId": "<WORKSPACE_ID>",
+          "notebookParameters": {
+            "source_csv_url": {
+              "value": {
+                "value": "@pipeline().parameters.sourceCsvUrl",
+                "type": "Expression"
+              },
+              "type": "string"
+            },
+            "workspace_id": {
+              "value": "<WORKSPACE_ID>",
+              "type": "string"
+            },
+            "lakehouse_id": {
+              "value": "<LAKEHOUSE_ID>",
+              "type": "string"
+            },
+            "table_name": {
+              "value": {
+                "value": "@pipeline().parameters.tableName",
+                "type": "Expression"
+              },
+              "type": "string"
+            },
+            "write_mode": {
+              "value": {
+                "value": "@pipeline().parameters.writeMode",
+                "type": "Expression"
+              },
+              "type": "string"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+
