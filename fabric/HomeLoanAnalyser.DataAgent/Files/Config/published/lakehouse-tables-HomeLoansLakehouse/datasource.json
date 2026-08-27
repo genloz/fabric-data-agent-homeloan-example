@@ -9,35 +9,35 @@
   "metadata": null,
   "elements": [
     {
-      "id": "02283991-7770-4ec5-a1e4-b3fc211ededd",
+      "id": "5422af7e-2e73-484a-9fc3-bcd346d616ff",
       "is_selected": false,
       "display_name": "Schemas",
       "type": "schema_grouping",
       "description": null,
       "children": [
         {
-          "id": "59fa03b5-76f3-4f40-ba74-fc3c056b8522",
+          "id": "aa3ee5fe-8c8f-449c-b00f-aa53a7369ffc",
           "is_selected": false,
           "display_name": "dbo",
           "type": "lakehouse_tables.schema",
           "description": null,
           "children": [
             {
-              "id": "9c41e066-7ac8-4211-91de-3bf63835d462",
+              "id": "41549938-bd96-4d4c-8bbf-8584f7a87a50",
               "is_selected": false,
               "display_name": "Tables",
               "type": "table_grouping",
               "description": null,
               "children": [
                 {
-                  "id": "b9cc59c4-6307-4a34-9997-4421b94cde44",
+                  "id": "6a37f34a-b772-48b1-a099-4e04bacd362b",
                   "is_selected": true,
                   "display_name": "home_loans",
                   "type": "lakehouse_tables.table",
                   "description": null,
                   "children": [
                     {
-                      "id": "a9bd667f-288e-4601-b1f5-83089cb2fe6f",
+                      "id": "635767f3-c7b6-479a-b585-bd9590468d4a",
                       "is_selected": true,
                       "display_name": "loan_id",
                       "type": "lakehouse_tables.column",
@@ -46,7 +46,7 @@
                       "children": []
                     },
                     {
-                      "id": "5ff2c8ff-9fdb-458b-a586-d45c3e1eb24e",
+                      "id": "c23ce972-351e-4ac9-9b7e-aca811727618",
                       "is_selected": true,
                       "display_name": "application_date",
                       "type": "lakehouse_tables.column",
@@ -55,7 +55,7 @@
                       "children": []
                     },
                     {
-                      "id": "f6ec1997-c289-4f83-91f6-15bb12f1d187",
+                      "id": "4975e557-2da7-4b7b-971b-3b0b80dc3cf3",
                       "is_selected": true,
                       "display_name": "settlement_date",
                       "type": "lakehouse_tables.column",
@@ -64,7 +64,7 @@
                       "children": []
                     },
                     {
-                      "id": "1f431f5e-4d5a-4409-b2e8-fc4199f41228",
+                      "id": "fc15bd07-315d-4e6d-b84f-99a6c98cc73b",
                       "is_selected": true,
                       "display_name": "state",
                       "type": "lakehouse_tables.column",
@@ -73,7 +73,7 @@
                       "children": []
                     },
                     {
-                      "id": "0ab7f29d-fb46-4012-a456-e83b6fcac4ec",
+                      "id": "df68ac01-aa99-476d-8651-13ba4ec783e4",
                       "is_selected": true,
                       "display_name": "postcode_region",
                       "type": "lakehouse_tables.column",
@@ -82,7 +82,7 @@
                       "children": []
                     },
                     {
-                      "id": "16ebef7b-a986-4ff6-bc50-1a0f80f7a628",
+                      "id": "20cdeaa1-cceb-4abb-827d-57e833ce5c8b",
                       "is_selected": true,
                       "display_name": "property_type",
                       "type": "lakehouse_tables.column",
@@ -91,7 +91,7 @@
                       "children": []
                     },
                     {
-                      "id": "5bb34580-5d09-4b88-b4bb-12d1b0903cfc",
+                      "id": "c83294fd-d136-42b6-bf80-4c76d5a75596",
                       "is_selected": true,
                       "display_name": "occupancy_type",
                       "type": "lakehouse_tables.column",
@@ -100,7 +100,7 @@
                       "children": []
                     },
                     {
-                      "id": "44eb87e8-dd11-4eb3-a087-6092299d1acc",
+                      "id": "7d2c1830-b64f-4cea-89c3-94a63d11906e",
                       "is_selected": true,
                       "display_name": "loan_purpose",
                       "type": "lakehouse_tables.column",
@@ -109,7 +109,7 @@
                       "children": []
                     },
                     {
-                      "id": "23f6a7cb-cd11-4659-acff-ea481789845f",
+                      "id": "0e68db6f-3455-4ec0-a383-d7e6ad8067d4",
                       "is_selected": true,
                       "display_name": "first_home_buyer",
                       "type": "lakehouse_tables.column",
@@ -118,7 +118,7 @@
                       "children": []
                     },
                     {
-                      "id": "183682c4-ccb7-4f54-93be-75ce6569e5c4",
+                      "id": "d1a1917e-b9d3-4c53-bfdc-922a3e8eae9f",
                       "is_selected": true,
                       "display_name": "channel",
                       "type": "lakehouse_tables.column",
@@ -127,7 +127,7 @@
                       "children": []
                     },
                     {
-                      "id": "e136620d-829d-4569-a444-abf98e5bbf45",
+                      "id": "601a3a35-407d-4cc1-af9e-24b0c4bbf001",
                       "is_selected": true,
                       "display_name": "loan_amount",
                       "type": "lakehouse_tables.column",
@@ -136,7 +136,7 @@
                       "children": []
                     },
                     {
-                      "id": "8488ea5f-fffc-4dd5-bf50-026ce52c00aa",
+                      "id": "b73ca3ff-96ee-4e2d-8a90-3ff1ab192533",
                       "is_selected": true,
                       "display_name": "property_value",
                       "type": "lakehouse_tables.column",
@@ -145,7 +145,7 @@
                       "children": []
                     },
                     {
-                      "id": "a4df9e23-4963-4fe4-9507-0de9b30c3398",
+                      "id": "2ce7ea4f-5dc5-4c0d-a0e3-b3e8a5cdbd8d",
                       "is_selected": true,
                       "display_name": "deposit_amount",
                       "type": "lakehouse_tables.column",
@@ -154,7 +154,7 @@
                       "children": []
                     },
                     {
-                      "id": "d7f40ae6-4054-43eb-9e81-289e85158492",
+                      "id": "4cd49ab9-d1c4-482e-8230-12a2036097dd",
                       "is_selected": true,
                       "display_name": "lvr_pct",
                       "type": "lakehouse_tables.column",
@@ -163,7 +163,7 @@
                       "children": []
                     },
                     {
-                      "id": "39e7b356-94cb-4406-9700-8b649fb9fb54",
+                      "id": "94653f19-0544-42b5-b453-ef7b301b5aa8",
                       "is_selected": true,
                       "display_name": "interest_rate_pct",
                       "type": "lakehouse_tables.column",
@@ -172,7 +172,7 @@
                       "children": []
                     },
                     {
-                      "id": "3e3a48e9-0e05-46be-b69d-5dc0ea9e0070",
+                      "id": "ca9bd958-18b6-4e6a-901c-f2e24e5da5b7",
                       "is_selected": true,
                       "display_name": "term_years",
                       "type": "lakehouse_tables.column",
@@ -181,7 +181,7 @@
                       "children": []
                     },
                     {
-                      "id": "6fcd0c37-544f-476d-b590-0ddbadf7b6cf",
+                      "id": "39e0430f-ba73-4201-ab98-8fbe33b671fa",
                       "is_selected": true,
                       "display_name": "repayment_type",
                       "type": "lakehouse_tables.column",
@@ -190,7 +190,7 @@
                       "children": []
                     },
                     {
-                      "id": "364f8700-b394-4346-90d2-08e6567f9668",
+                      "id": "d2aa7760-0876-426d-a355-9443418636b1",
                       "is_selected": true,
                       "display_name": "monthly_repayment",
                       "type": "lakehouse_tables.column",
@@ -199,7 +199,7 @@
                       "children": []
                     },
                     {
-                      "id": "74610e90-10d2-40e3-b31a-1c3e10efd1fa",
+                      "id": "3d4a32c0-bcd8-4226-95ab-d4d4d5d5bd1c",
                       "is_selected": true,
                       "display_name": "application_status",
                       "type": "lakehouse_tables.column",
@@ -208,7 +208,7 @@
                       "children": []
                     },
                     {
-                      "id": "7f6be3b3-4e7a-483f-88dd-a2da207809da",
+                      "id": "843e47ed-3208-44fa-b5e3-ec467adcd333",
                       "is_selected": true,
                       "display_name": "days_to_decision",
                       "type": "lakehouse_tables.column",
@@ -217,7 +217,7 @@
                       "children": []
                     },
                     {
-                      "id": "50b6355d-298a-4311-91ec-1945f6829723",
+                      "id": "eef9e55e-c7c3-4566-a5f9-a0e88084d39d",
                       "is_selected": true,
                       "display_name": "credit_score_band",
                       "type": "lakehouse_tables.column",
@@ -226,7 +226,7 @@
                       "children": []
                     },
                     {
-                      "id": "88c6eb12-d296-46a4-8c07-e544215710f4",
+                      "id": "21d8da5c-e982-4563-a895-92f9f608e30d",
                       "is_selected": true,
                       "display_name": "debt_to_income_ratio",
                       "type": "lakehouse_tables.column",
@@ -235,7 +235,7 @@
                       "children": []
                     },
                     {
-                      "id": "aea009b8-c5b5-418e-81e7-01766dd44e65",
+                      "id": "248d850e-a443-441b-b573-2429ddb6479f",
                       "is_selected": true,
                       "display_name": "arrears_days",
                       "type": "lakehouse_tables.column",
@@ -244,7 +244,7 @@
                       "children": []
                     },
                     {
-                      "id": "5582b27f-a60f-4e76-bf17-b4de075d9e27",
+                      "id": "274afbca-3075-448a-a91d-534c8d054ad2",
                       "is_selected": true,
                       "display_name": "hardship_flag",
                       "type": "lakehouse_tables.column",
@@ -253,7 +253,7 @@
                       "children": []
                     },
                     {
-                      "id": "1202adfc-b4b4-4448-8f60-2906b9c4a0d4",
+                      "id": "d57c5817-72bd-4476-97fb-745a20b20927",
                       "is_selected": true,
                       "display_name": "annual_household_income",
                       "type": "lakehouse_tables.column",
@@ -262,7 +262,7 @@
                       "children": []
                     },
                     {
-                      "id": "17fa5df9-917b-4a02-b06e-87165c830aef",
+                      "id": "a87e75f7-37f7-43ad-b595-3238e580173e",
                       "is_selected": true,
                       "display_name": "current_balance",
                       "type": "lakehouse_tables.column",
@@ -271,7 +271,7 @@
                       "children": []
                     },
                     {
-                      "id": "8f1678da-2378-418a-91cf-f9df0d604a12",
+                      "id": "95b7851b-795d-46ab-a3fe-26bc6ea8ebcb",
                       "is_selected": true,
                       "display_name": "application_month",
                       "type": "lakehouse_tables.column",
@@ -280,7 +280,7 @@
                       "children": []
                     },
                     {
-                      "id": "0aad9ee3-665b-45aa-acbc-434a2afc6ee2",
+                      "id": "1542b544-a081-489c-8085-38c67614412c",
                       "is_selected": true,
                       "display_name": "settlement_month",
                       "type": "lakehouse_tables.column",
@@ -289,7 +289,7 @@
                       "children": []
                     },
                     {
-                      "id": "4d7b0c68-6b2c-4f46-bbf1-a69fb07bcd3f",
+                      "id": "d48f116a-c634-4573-90f8-e90f99e2cdb7",
                       "is_selected": true,
                       "display_name": "is_high_lvr",
                       "type": "lakehouse_tables.column",
@@ -298,7 +298,7 @@
                       "children": []
                     },
                     {
-                      "id": "de38855b-d806-4c65-ad70-2a1262684b5e",
+                      "id": "bca24c3a-b6fc-4d81-ba6f-2a23f39b6d76",
                       "is_selected": true,
                       "display_name": "is_in_arrears",
                       "type": "lakehouse_tables.column",
@@ -307,7 +307,7 @@
                       "children": []
                     },
                     {
-                      "id": "9791e84f-1aaf-4eae-a4df-26cb57148493",
+                      "id": "2a7eb45f-4db6-4b1a-9525-bb4f27450ad5",
                       "is_selected": true,
                       "display_name": "delinquency_band",
                       "type": "lakehouse_tables.column",
@@ -318,14 +318,14 @@
                   ]
                 },
                 {
-                  "id": "5c33b7a2-07af-4606-bccd-8ca8755707c1",
+                  "id": "6c6ce162-1c29-497f-86e3-352690e1d483",
                   "is_selected": false,
                   "display_name": "home_loans_agent_evaluation_runs",
                   "type": "lakehouse_tables.table",
                   "description": null,
                   "children": [
                     {
-                      "id": "5b6b0bcf-e6d5-4f92-9365-e980354507e7",
+                      "id": "7527522d-1782-47ac-b57f-ae080debf4a3",
                       "is_selected": true,
                       "display_name": "evaluation_suite",
                       "type": "lakehouse_tables.column",
@@ -334,7 +334,7 @@
                       "children": []
                     },
                     {
-                      "id": "39d5af97-ad01-4ff8-a5ef-38a67d675933",
+                      "id": "4867637a-d32c-4f86-acd2-bd8a8905a88e",
                       "is_selected": true,
                       "display_name": "evaluation_id",
                       "type": "lakehouse_tables.column",
@@ -343,7 +343,7 @@
                       "children": []
                     },
                     {
-                      "id": "33fdc8e5-20e2-4630-92b9-b26abca5d0cd",
+                      "id": "7f7b7b67-0d3b-484c-a0f0-3ae19c522793",
                       "is_selected": true,
                       "display_name": "result_table_name",
                       "type": "lakehouse_tables.column",
@@ -352,7 +352,7 @@
                       "children": []
                     },
                     {
-                      "id": "e91f3ce0-43bf-4103-a1ac-6826ff752d75",
+                      "id": "79f8c3c2-54e4-4943-afcd-39c5ef4e426a",
                       "is_selected": true,
                       "display_name": "data_agent_name",
                       "type": "lakehouse_tables.column",
@@ -361,7 +361,7 @@
                       "children": []
                     },
                     {
-                      "id": "c474694f-813e-4d4f-977e-ebce976efb65",
+                      "id": "862d36c6-c8a7-46b9-9c17-d2c5bc3a30d5",
                       "is_selected": true,
                       "display_name": "data_agent_stage",
                       "type": "lakehouse_tables.column",
@@ -370,7 +370,7 @@
                       "children": []
                     },
                     {
-                      "id": "48aa7dd0-ea6c-4f25-bdea-c953ba887e86",
+                      "id": "63df91be-ba65-43cb-8124-54fef3f52cf1",
                       "is_selected": true,
                       "display_name": "evaluated_at_utc",
                       "type": "lakehouse_tables.column",
@@ -379,7 +379,7 @@
                       "children": []
                     },
                     {
-                      "id": "7d024a38-6a2f-40ae-849c-acfa165aa569",
+                      "id": "b935b338-656d-418d-a6d9-963bd87c4c0d",
                       "is_selected": true,
                       "display_name": "total_count",
                       "type": "lakehouse_tables.column",
@@ -388,7 +388,7 @@
                       "children": []
                     },
                     {
-                      "id": "2e9e9d82-0854-4b71-ae8d-17a3d485a275",
+                      "id": "2e8bef8b-90e2-4412-9bad-781c53a4b32c",
                       "is_selected": true,
                       "display_name": "true_count",
                       "type": "lakehouse_tables.column",
@@ -397,7 +397,7 @@
                       "children": []
                     },
                     {
-                      "id": "5ccc0610-6d59-4a69-8968-ac89ec525ae8",
+                      "id": "a25286c1-f37c-4bd9-ab7d-fdd3e3f9e647",
                       "is_selected": true,
                       "display_name": "false_count",
                       "type": "lakehouse_tables.column",
@@ -406,7 +406,7 @@
                       "children": []
                     },
                     {
-                      "id": "530cddf8-15c6-4b8e-bb62-cf4f1db87f6a",
+                      "id": "e0907dab-1dd6-403d-a61e-2282ed027e66",
                       "is_selected": true,
                       "display_name": "unclear_count",
                       "type": "lakehouse_tables.column",
@@ -421,28 +421,28 @@
           ]
         },
         {
-          "id": "f5f89b6c-377b-4160-a80f-68f1f1c19d11",
+          "id": "d244eebb-c4d5-4ee2-9477-780b05e218f8",
           "is_selected": false,
           "display_name": "eval_result",
           "type": "lakehouse_tables.schema",
           "description": null,
           "children": [
             {
-              "id": "2d830cd6-253e-49e6-9eb5-a80f733c20ab",
+              "id": "ec1a15ec-818f-4db5-974f-b4a5f2bea004",
               "is_selected": false,
               "display_name": "Tables",
               "type": "table_grouping",
               "description": null,
               "children": [
                 {
-                  "id": "9f9d1014-9a2b-4b26-9d7e-ec7007744c19",
+                  "id": "b1b2147e-b76f-44e3-b478-7458ac3d57d9",
                   "is_selected": false,
                   "display_name": "home_loans_agent_accuracy_evaluation",
                   "type": "lakehouse_tables.table",
                   "description": null,
                   "children": [
                     {
-                      "id": "a46e805b-42e3-4d74-93a1-bf4091cb1108",
+                      "id": "6f5bb4e6-b506-4a19-891e-53a87bf05ea1",
                       "is_selected": true,
                       "display_name": "id",
                       "type": "lakehouse_tables.column",
@@ -451,7 +451,7 @@
                       "children": []
                     },
                     {
-                      "id": "40512b3f-8cfa-4406-baf2-4054cdcbe7f5",
+                      "id": "33ecc36d-4151-4c27-9f9f-90ec065bde8f",
                       "is_selected": true,
                       "display_name": "evaluation_id",
                       "type": "lakehouse_tables.column",
@@ -460,7 +460,7 @@
                       "children": []
                     },
                     {
-                      "id": "938b0d36-8f7f-4d6b-b25a-4062ebfa345d",
+                      "id": "c76388c3-00bb-4f99-af55-c068673f1a1d",
                       "is_selected": true,
                       "display_name": "thread_id",
                       "type": "lakehouse_tables.column",
@@ -469,7 +469,7 @@
                       "children": []
                     },
                     {
-                      "id": "d3a13d18-a7cb-48ff-9113-f27c785129af",
+                      "id": "c705b91e-d463-440b-b377-b4dfd0b88d2a",
                       "is_selected": true,
                       "display_name": "run_timestamp",
                       "type": "lakehouse_tables.column",
@@ -478,7 +478,7 @@
                       "children": []
                     },
                     {
-                      "id": "ca8d43d3-ed51-4b05-9140-bc77c4144754",
+                      "id": "18cb8916-b73f-466a-a4f8-50845fc9c652",
                       "is_selected": true,
                       "display_name": "question",
                       "type": "lakehouse_tables.column",
@@ -487,7 +487,7 @@
                       "children": []
                     },
                     {
-                      "id": "06920e4f-39c0-4261-9a28-780b9bef272e",
+                      "id": "25a41b12-4298-4f59-bb3a-ab2b6056bbd2",
                       "is_selected": true,
                       "display_name": "expected_answer",
                       "type": "lakehouse_tables.column",
@@ -496,7 +496,7 @@
                       "children": []
                     },
                     {
-                      "id": "2ac391fd-2bc7-4a8a-b588-86cf5d496f92",
+                      "id": "37bdd806-2fda-4ed9-ae48-5df6dce09d7c",
                       "is_selected": true,
                       "display_name": "actual_answer",
                       "type": "lakehouse_tables.column",
@@ -505,7 +505,7 @@
                       "children": []
                     },
                     {
-                      "id": "8c4b3135-3980-41bd-a4cf-a7cc3ce88976",
+                      "id": "4d184457-4683-4df1-b42b-7ace5a440b1f",
                       "is_selected": true,
                       "display_name": "execution_time_sec",
                       "type": "lakehouse_tables.column",
@@ -514,7 +514,7 @@
                       "children": []
                     },
                     {
-                      "id": "5a37c409-006b-4ebe-8e29-b3e1130e8b54",
+                      "id": "158b5b56-c007-4068-9800-80ad65f44dbe",
                       "is_selected": true,
                       "display_name": "status",
                       "type": "lakehouse_tables.column",
@@ -523,7 +523,7 @@
                       "children": []
                     },
                     {
-                      "id": "2f480e4b-642a-4291-8c69-e665cb4f0eda",
+                      "id": "e2e88f5f-d781-4eb5-ae13-f9f30ece1e5d",
                       "is_selected": true,
                       "display_name": "thread_url",
                       "type": "lakehouse_tables.column",
@@ -532,7 +532,7 @@
                       "children": []
                     },
                     {
-                      "id": "d0b2829e-4ab1-4840-931a-39542470c22c",
+                      "id": "f0ed62e7-94a5-4134-b05a-c1cdbb8e6303",
                       "is_selected": true,
                       "display_name": "evaluation_judgement",
                       "type": "lakehouse_tables.column",
@@ -541,7 +541,7 @@
                       "children": []
                     },
                     {
-                      "id": "83dee1bc-dee4-407b-b87f-b3bb8afec3da",
+                      "id": "48ca24a1-98b2-477e-9102-1e143673262d",
                       "is_selected": true,
                       "display_name": "evaluation_message",
                       "type": "lakehouse_tables.column",
@@ -550,7 +550,7 @@
                       "children": []
                     },
                     {
-                      "id": "309b9898-6772-4c5d-997b-5710db242bec",
+                      "id": "8cd2403b-28a6-4ddd-8bab-e5ccba2da53f",
                       "is_selected": true,
                       "display_name": "evaluation_status",
                       "type": "lakehouse_tables.column",
@@ -559,7 +559,7 @@
                       "children": []
                     },
                     {
-                      "id": "c4be0212-d7bd-4af4-848d-b21dff0c7642",
+                      "id": "2a11a0d8-ed5d-4fe6-9028-0002c85e5184",
                       "is_selected": true,
                       "display_name": "evaluation_thread_url",
                       "type": "lakehouse_tables.column",
@@ -568,7 +568,7 @@
                       "children": []
                     },
                     {
-                      "id": "a8147985-fa70-4b5e-940d-8d1ed260c7dd",
+                      "id": "2f9ce4c6-495c-47c3-9708-d5e9782699d9",
                       "is_selected": true,
                       "display_name": "data_agent_version",
                       "type": "lakehouse_tables.column",
@@ -577,7 +577,7 @@
                       "children": []
                     },
                     {
-                      "id": "cc31bd17-5720-4352-9fd9-03ae1b643cea",
+                      "id": "13b521d8-3c48-478b-b8cc-e226e56fa963",
                       "is_selected": true,
                       "display_name": "data_agent_etag",
                       "type": "lakehouse_tables.column",
@@ -586,7 +586,7 @@
                       "children": []
                     },
                     {
-                      "id": "02ecea98-1708-4d91-ad4e-6369c82b3dd7",
+                      "id": "82ae8fa3-c441-4f85-8f75-c50ebeda7398",
                       "is_selected": true,
                       "display_name": "data_agent_last_updated",
                       "type": "lakehouse_tables.column",
@@ -595,7 +595,7 @@
                       "children": []
                     },
                     {
-                      "id": "8fa25dec-a69e-44a8-8e6d-40ce33327817",
+                      "id": "03d827d3-ad57-487f-8633-551ac26c6c5c",
                       "is_selected": true,
                       "display_name": "data_agent_configuration",
                       "type": "lakehouse_tables.column",
@@ -604,7 +604,7 @@
                       "children": []
                     },
                     {
-                      "id": "8679168f-721e-40fd-8c62-c26d455046c4",
+                      "id": "a9b944fb-38f8-4a20-bd4a-0086ae6a83d2",
                       "is_selected": true,
                       "display_name": "data_sources",
                       "type": "lakehouse_tables.column",
@@ -615,14 +615,14 @@
                   ]
                 },
                 {
-                  "id": "2383967f-9a26-4d7d-83ea-f65637662169",
+                  "id": "2e5a9d97-3f84-40d1-b86f-e7534639669e",
                   "is_selected": false,
                   "display_name": "home_loans_agent_accuracy_evaluation_steps",
                   "type": "lakehouse_tables.table",
                   "description": null,
                   "children": [
                     {
-                      "id": "8097fd66-1608-45b0-bf43-25a8252497b5",
+                      "id": "c4cabd3c-4fc5-42cc-8cb5-d0125b9ce9f3",
                       "is_selected": true,
                       "display_name": "id",
                       "type": "lakehouse_tables.column",
@@ -631,7 +631,7 @@
                       "children": []
                     },
                     {
-                      "id": "85b00f2a-24f9-40e5-a199-e3d43aba5108",
+                      "id": "059742be-35cf-43ce-9517-3b27c376574d",
                       "is_selected": true,
                       "display_name": "thread_id",
                       "type": "lakehouse_tables.column",
@@ -640,7 +640,7 @@
                       "children": []
                     },
                     {
-                      "id": "2f3a8e50-51f4-45e0-9e4a-7cb268d01119",
+                      "id": "d0f11acc-b74b-4680-a3c7-60812349e991",
                       "is_selected": true,
                       "display_name": "run_id",
                       "type": "lakehouse_tables.column",
@@ -649,7 +649,7 @@
                       "children": []
                     },
                     {
-                      "id": "47f088e3-33c1-49b9-85b3-a1c83c102ebf",
+                      "id": "ab42f282-b1bb-44e6-bf5d-9d0c6648cf45",
                       "is_selected": true,
                       "display_name": "function_names",
                       "type": "lakehouse_tables.column",
@@ -658,7 +658,7 @@
                       "children": []
                     },
                     {
-                      "id": "3943b4d3-424a-4199-97cf-dcd4e9c36fd5",
+                      "id": "c535854d-2314-4bcc-9932-2f12f225b767",
                       "is_selected": true,
                       "display_name": "function_queries",
                       "type": "lakehouse_tables.column",
@@ -667,7 +667,7 @@
                       "children": []
                     },
                     {
-                      "id": "6da8a3e0-29b0-4274-8a42-e0d8e1f5ee37",
+                      "id": "8122eb83-5966-46bd-9fb3-e34876cb776f",
                       "is_selected": true,
                       "display_name": "function_outputs",
                       "type": "lakehouse_tables.column",
@@ -676,7 +676,7 @@
                       "children": []
                     },
                     {
-                      "id": "a2a394d9-46f6-40a3-a5f9-5e197f655e30",
+                      "id": "515ff724-e4d2-468c-9704-7f481cc8b186",
                       "is_selected": true,
                       "display_name": "sql_steps",
                       "type": "lakehouse_tables.column",
@@ -685,7 +685,7 @@
                       "children": []
                     },
                     {
-                      "id": "a402624e-fc14-477b-aed7-8cd946181981",
+                      "id": "e84cf2ec-0a6a-4bf7-856d-ccd7fd7a1069",
                       "is_selected": true,
                       "display_name": "dax_steps",
                       "type": "lakehouse_tables.column",
@@ -694,7 +694,7 @@
                       "children": []
                     },
                     {
-                      "id": "cb2f01cf-84ed-48e6-a026-59ffef27bb5b",
+                      "id": "0a6de94f-2f4b-41b8-b61b-7c28ff3fd7fb",
                       "is_selected": true,
                       "display_name": "kql_steps",
                       "type": "lakehouse_tables.column",
@@ -705,14 +705,14 @@
                   ]
                 },
                 {
-                  "id": "b0430e16-3cc8-4022-8d0a-03b4596ada47",
+                  "id": "9494685f-075c-4ec9-9d20-77a6b2d6050d",
                   "is_selected": false,
                   "display_name": "home_loans_agent_rai_evaluation",
                   "type": "lakehouse_tables.table",
                   "description": null,
                   "children": [
                     {
-                      "id": "a5a43c9c-3894-40b1-8d86-1730b8596622",
+                      "id": "3a70b631-45f3-4e6a-b453-c07668ee82ab",
                       "is_selected": true,
                       "display_name": "id",
                       "type": "lakehouse_tables.column",
@@ -721,7 +721,7 @@
                       "children": []
                     },
                     {
-                      "id": "bd4e1831-5bf8-46d1-957e-d3a341d235a5",
+                      "id": "665e25fa-c247-4b8f-bec2-2377a8039de7",
                       "is_selected": true,
                       "display_name": "evaluation_id",
                       "type": "lakehouse_tables.column",
@@ -730,7 +730,7 @@
                       "children": []
                     },
                     {
-                      "id": "ce0bbd17-668c-4932-b3e9-6e9798d7a0df",
+                      "id": "0871e2a9-7575-4ce5-8c44-f5d17bbb09d5",
                       "is_selected": true,
                       "display_name": "thread_id",
                       "type": "lakehouse_tables.column",
@@ -739,7 +739,7 @@
                       "children": []
                     },
                     {
-                      "id": "67d84e75-b691-456d-b499-265b016b2c14",
+                      "id": "ebf1547b-f981-41e0-9ee5-f23b3d20f9d7",
                       "is_selected": true,
                       "display_name": "run_timestamp",
                       "type": "lakehouse_tables.column",
@@ -748,7 +748,7 @@
                       "children": []
                     },
                     {
-                      "id": "2e4b7bf5-4f6b-4fa1-a75f-4c2090e442d7",
+                      "id": "447e5b85-863a-4af1-ba68-00bb36f5397b",
                       "is_selected": true,
                       "display_name": "question",
                       "type": "lakehouse_tables.column",
@@ -757,7 +757,7 @@
                       "children": []
                     },
                     {
-                      "id": "215a3671-f49d-45b5-a688-f78e8613f4e4",
+                      "id": "19205015-a915-4af6-a713-cdcd3125cf53",
                       "is_selected": true,
                       "display_name": "expected_answer",
                       "type": "lakehouse_tables.column",
@@ -766,7 +766,7 @@
                       "children": []
                     },
                     {
-                      "id": "bb570510-034d-41b1-918b-dacf63d02496",
+                      "id": "56b4f570-02b1-4327-bf12-53d132776934",
                       "is_selected": true,
                       "display_name": "actual_answer",
                       "type": "lakehouse_tables.column",
@@ -775,7 +775,7 @@
                       "children": []
                     },
                     {
-                      "id": "d4c5f6ba-fa46-4d98-8b61-fdf0f50d1a4d",
+                      "id": "4756d201-7ecc-4057-9487-1c415cee778d",
                       "is_selected": true,
                       "display_name": "execution_time_sec",
                       "type": "lakehouse_tables.column",
@@ -784,7 +784,7 @@
                       "children": []
                     },
                     {
-                      "id": "f58bbe13-cb7e-4c39-b296-8e2ec8c4f1b4",
+                      "id": "ff644b0f-e020-4068-9780-6495990740fe",
                       "is_selected": true,
                       "display_name": "status",
                       "type": "lakehouse_tables.column",
@@ -793,7 +793,7 @@
                       "children": []
                     },
                     {
-                      "id": "13a708c7-cde7-4329-981b-7b079e943da9",
+                      "id": "f9ad143a-8876-4460-a17f-c6a9b4b86766",
                       "is_selected": true,
                       "display_name": "thread_url",
                       "type": "lakehouse_tables.column",
@@ -802,7 +802,7 @@
                       "children": []
                     },
                     {
-                      "id": "ef7aac47-aeb6-476e-8143-5863d84a90c7",
+                      "id": "d8535a07-b4ac-47a1-9abc-973018c6f2de",
                       "is_selected": true,
                       "display_name": "evaluation_judgement",
                       "type": "lakehouse_tables.column",
@@ -811,7 +811,7 @@
                       "children": []
                     },
                     {
-                      "id": "3fdd9672-83ae-4106-b0bb-d07a3816adf4",
+                      "id": "cb3b50df-a706-4d53-9373-f696a9b3bcbe",
                       "is_selected": true,
                       "display_name": "evaluation_message",
                       "type": "lakehouse_tables.column",
@@ -820,7 +820,7 @@
                       "children": []
                     },
                     {
-                      "id": "cbb9d899-a0c4-4954-ad78-01997c98a046",
+                      "id": "2897a531-f345-490c-a25b-fd5ef5ceaf11",
                       "is_selected": true,
                       "display_name": "evaluation_status",
                       "type": "lakehouse_tables.column",
@@ -829,7 +829,7 @@
                       "children": []
                     },
                     {
-                      "id": "395ee3bd-2dd3-4cfc-b178-8ad3c6ef1ac2",
+                      "id": "000d48bc-73aa-4216-beb5-b1180eb800d9",
                       "is_selected": true,
                       "display_name": "evaluation_thread_url",
                       "type": "lakehouse_tables.column",
@@ -838,7 +838,7 @@
                       "children": []
                     },
                     {
-                      "id": "f1815616-59a9-4189-93f1-a5cbdc3ccb39",
+                      "id": "7162a720-1300-4917-9c49-f1cda14c0f54",
                       "is_selected": true,
                       "display_name": "data_agent_version",
                       "type": "lakehouse_tables.column",
@@ -847,7 +847,7 @@
                       "children": []
                     },
                     {
-                      "id": "218f4f23-8cc0-4695-ab2a-f8bcaae45ad5",
+                      "id": "8a0089a5-53c6-4fea-9375-6bda8f99e9e5",
                       "is_selected": true,
                       "display_name": "data_agent_etag",
                       "type": "lakehouse_tables.column",
@@ -856,7 +856,7 @@
                       "children": []
                     },
                     {
-                      "id": "fcaaddbb-d569-45a1-a194-d32d5c2c428e",
+                      "id": "673d077a-0ba0-4f75-a189-3180a1bda8c2",
                       "is_selected": true,
                       "display_name": "data_agent_last_updated",
                       "type": "lakehouse_tables.column",
@@ -865,7 +865,7 @@
                       "children": []
                     },
                     {
-                      "id": "5add9c19-beff-4e58-b193-b5927f609e30",
+                      "id": "1852490c-bcec-4c06-8f82-a4bfa7ddbd86",
                       "is_selected": true,
                       "display_name": "data_agent_configuration",
                       "type": "lakehouse_tables.column",
@@ -874,7 +874,7 @@
                       "children": []
                     },
                     {
-                      "id": "17f834e3-9861-4434-a7ab-a2cd4fdafef1",
+                      "id": "031ceda7-50b1-442e-9355-72236c4180a9",
                       "is_selected": true,
                       "display_name": "data_sources",
                       "type": "lakehouse_tables.column",
@@ -885,14 +885,14 @@
                   ]
                 },
                 {
-                  "id": "afd84191-6cbd-4df9-aa41-ed78dc47437d",
+                  "id": "cb330f5f-951b-4dfc-b05e-3d14c936202d",
                   "is_selected": false,
                   "display_name": "home_loans_agent_rai_evaluation_steps",
                   "type": "lakehouse_tables.table",
                   "description": null,
                   "children": [
                     {
-                      "id": "bcc32d9d-df3e-4a22-a4d5-2ca2ae43b46e",
+                      "id": "0d1278d9-02e1-4e22-bbc8-90eb31369c39",
                       "is_selected": true,
                       "display_name": "id",
                       "type": "lakehouse_tables.column",
@@ -901,7 +901,7 @@
                       "children": []
                     },
                     {
-                      "id": "469e95a9-225f-4f8a-b088-1b6a8f915b85",
+                      "id": "ec29b8d9-1a9a-4284-85c5-24d49a790b82",
                       "is_selected": true,
                       "display_name": "thread_id",
                       "type": "lakehouse_tables.column",
@@ -910,7 +910,7 @@
                       "children": []
                     },
                     {
-                      "id": "4f3e4e31-1bf0-4331-82fd-4c5356d508dd",
+                      "id": "84ee8147-8f24-42a7-84be-5044b09407a3",
                       "is_selected": true,
                       "display_name": "run_id",
                       "type": "lakehouse_tables.column",
@@ -919,7 +919,7 @@
                       "children": []
                     },
                     {
-                      "id": "04059a42-aa2f-48ae-9abd-353c86654757",
+                      "id": "c6d4dda5-6950-4e1b-9501-4254f81fe10c",
                       "is_selected": true,
                       "display_name": "function_names",
                       "type": "lakehouse_tables.column",
@@ -928,7 +928,7 @@
                       "children": []
                     },
                     {
-                      "id": "e90c5849-d6f8-4cc3-86f2-e84d1ed1ce34",
+                      "id": "1e8be1da-3bab-4cbe-8ee5-313e61f93973",
                       "is_selected": true,
                       "display_name": "function_queries",
                       "type": "lakehouse_tables.column",
@@ -937,7 +937,7 @@
                       "children": []
                     },
                     {
-                      "id": "511ac762-8b01-4bdf-bec2-b9f8d3c37b17",
+                      "id": "d9bcf438-9422-4151-a923-bec2c54fb807",
                       "is_selected": true,
                       "display_name": "function_outputs",
                       "type": "lakehouse_tables.column",
@@ -946,7 +946,7 @@
                       "children": []
                     },
                     {
-                      "id": "e5bcf659-04ba-4fed-bd57-39952473bdb1",
+                      "id": "9b2f8a14-dc4d-45e5-b4d8-fab772ab9f77",
                       "is_selected": true,
                       "display_name": "sql_steps",
                       "type": "lakehouse_tables.column",
@@ -955,7 +955,7 @@
                       "children": []
                     },
                     {
-                      "id": "b0f405cd-edb3-4891-add6-93b7793588de",
+                      "id": "3e27efeb-f6e3-430a-a014-cb6d9ab64902",
                       "is_selected": true,
                       "display_name": "dax_steps",
                       "type": "lakehouse_tables.column",
@@ -964,7 +964,7 @@
                       "children": []
                     },
                     {
-                      "id": "ed576789-e920-4d7c-9b28-09c9e833b1cd",
+                      "id": "38c84730-4c35-4327-8b4f-1fab5072cdff",
                       "is_selected": true,
                       "display_name": "kql_steps",
                       "type": "lakehouse_tables.column",
