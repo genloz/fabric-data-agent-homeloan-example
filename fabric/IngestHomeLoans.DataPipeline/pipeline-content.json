@@ -1,6 +1,23 @@
 {
   "properties": {
-    "description": "Runs the LoadHomeLoans notebook to ingest the GitHub CSV into the HomeLoansLakehouse Delta table.",
+    "activities": [
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "4e3d65ca-c489-45c8-a667-e94c84b31c18",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 2,
+          "retryIntervalInSeconds": 60,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Load home loans into lakehouse",
+        "dependsOn": []
+      }
+    ],
     "parameters": {
       "sourceCsvUrl": {
         "type": "string",
@@ -14,55 +31,6 @@
         "type": "string",
         "defaultValue": "overwrite"
       }
-    },
-    "activities": [
-      {
-        "name": "Load home loans into lakehouse",
-        "type": "TridentNotebook",
-        "dependsOn": [],
-        "policy": {
-          "timeout": "0.12:00:00",
-          "retry": 2,
-          "retryIntervalInSeconds": 60,
-          "secureOutput": false,
-          "secureInput": false
-        },
-        "typeProperties": {
-          "notebookId": "<NOTEBOOK_ID>",
-          "workspaceId": "<WORKSPACE_ID>",
-          "notebookParameters": {
-            "source_csv_url": {
-              "value": {
-                "value": "@pipeline().parameters.sourceCsvUrl",
-                "type": "Expression"
-              },
-              "type": "string"
-            },
-            "workspace_id": {
-              "value": "<WORKSPACE_ID>",
-              "type": "string"
-            },
-            "lakehouse_id": {
-              "value": "<LAKEHOUSE_ID>",
-              "type": "string"
-            },
-            "table_name": {
-              "value": {
-                "value": "@pipeline().parameters.tableName",
-                "type": "Expression"
-              },
-              "type": "string"
-            },
-            "write_mode": {
-              "value": {
-                "value": "@pipeline().parameters.writeMode",
-                "type": "Expression"
-              },
-              "type": "string"
-            }
-          }
-        }
-      }
-    ]
+    }
   }
 }
