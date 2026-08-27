@@ -1,0 +1,11 @@
+expression 'DirectLake - HomeLoansLakehouse' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/6e20b31f-9ada-4ab5-aad3-f24a973a887a/f51fad59-cf24-4b31-aea1-548df7aed3d6", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: b95d0915-aa23-4c54-947e-5210cee3d64e
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[eval_result].[home_loans_agent_accuracy_evaluation]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[eval_result].[home_loans_agent_accuracy_evaluation_steps]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[eval_result].[home_loans_agent_rai_evaluation]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[eval_result].[home_loans_agent_rai_evaluation_steps]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[home_loans_agent_evaluation_runs]"}},"objectType":"Table"}]
+

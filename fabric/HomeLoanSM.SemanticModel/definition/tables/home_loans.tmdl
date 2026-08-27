@@ -1,0 +1,322 @@
+table home_loans
+	lineageTag: 3fca40c3-d755-4a45-aaf0-e8c52f179689
+	sourceLineageTag: [dbo].[home_loans]
+
+	column loan_id
+		dataType: string
+		lineageTag: b5358433-23b3-492f-bd99-62fb5af24290
+		sourceLineageTag: loan_id
+		summarizeBy: none
+		sourceColumn: loan_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column application_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e3efab9d-ff95-47c3-8c47-d1479b5dc703
+		sourceLineageTag: application_date
+		summarizeBy: none
+		sourceColumn: application_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column settlement_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 386e4d4a-7f71-4cfc-9646-2a577e841d12
+		sourceLineageTag: settlement_date
+		summarizeBy: none
+		sourceColumn: settlement_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		lineageTag: 430033e4-6000-4d06-a62a-bf2c47810058
+		sourceLineageTag: state
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column postcode_region
+		dataType: string
+		lineageTag: 488edb12-42d9-4f4c-8cb2-492000a299f5
+		sourceLineageTag: postcode_region
+		summarizeBy: none
+		sourceColumn: postcode_region
+
+		annotation SummarizationSetBy = Automatic
+
+	column property_type
+		dataType: string
+		lineageTag: 0ffa5113-673d-4413-afc8-1461df2c01c1
+		sourceLineageTag: property_type
+		summarizeBy: none
+		sourceColumn: property_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column occupancy_type
+		dataType: string
+		lineageTag: 52c0aad1-f5ed-4310-a53a-7b57243142cf
+		sourceLineageTag: occupancy_type
+		summarizeBy: none
+		sourceColumn: occupancy_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column loan_purpose
+		dataType: string
+		lineageTag: e54004bf-803e-4b91-b3ce-c54161945299
+		sourceLineageTag: loan_purpose
+		summarizeBy: none
+		sourceColumn: loan_purpose
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_home_buyer
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 55dccf0c-1b8a-42b5-a244-0d91da3ca746
+		sourceLineageTag: first_home_buyer
+		summarizeBy: none
+		sourceColumn: first_home_buyer
+
+		annotation SummarizationSetBy = Automatic
+
+	column channel
+		dataType: string
+		lineageTag: 52b4e1f0-1985-4d7d-89ec-bf475646d87f
+		sourceLineageTag: channel
+		summarizeBy: none
+		sourceColumn: channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column loan_amount
+		dataType: double
+		lineageTag: d4ded6a5-68cf-443f-ad20-43705e8edbcd
+		sourceLineageTag: loan_amount
+		summarizeBy: sum
+		sourceColumn: loan_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column property_value
+		dataType: double
+		lineageTag: 8b67c3a4-88bf-4162-8ad4-9df28177d474
+		sourceLineageTag: property_value
+		summarizeBy: sum
+		sourceColumn: property_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column deposit_amount
+		dataType: double
+		lineageTag: fd16e5fd-1845-4d8b-8b8f-7e5fe7d64238
+		sourceLineageTag: deposit_amount
+		summarizeBy: sum
+		sourceColumn: deposit_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lvr_pct
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: dd9ddacb-112b-4144-81cb-46fb1194acc3
+		sourceLineageTag: lvr_pct
+		summarizeBy: sum
+		sourceColumn: lvr_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column interest_rate_pct
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 5f17cb63-3810-4d83-85f3-8183c2dd3cd7
+		sourceLineageTag: interest_rate_pct
+		summarizeBy: sum
+		sourceColumn: interest_rate_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column term_years
+		dataType: int64
+		formatString: 0
+		lineageTag: 403e4636-3b04-4356-825c-eb595d865648
+		sourceLineageTag: term_years
+		summarizeBy: sum
+		sourceColumn: term_years
+
+		annotation SummarizationSetBy = Automatic
+
+	column repayment_type
+		dataType: string
+		lineageTag: f7cec586-7c47-4914-83f9-dde876c6a114
+		sourceLineageTag: repayment_type
+		summarizeBy: none
+		sourceColumn: repayment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthly_repayment
+		dataType: double
+		lineageTag: 6c2ad050-aeda-4df4-9d3d-8110d3b31e15
+		sourceLineageTag: monthly_repayment
+		summarizeBy: sum
+		sourceColumn: monthly_repayment
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column application_status
+		dataType: string
+		lineageTag: 87ada7fd-c45d-407a-a326-2fa2d3dc809d
+		sourceLineageTag: application_status
+		summarizeBy: none
+		sourceColumn: application_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_to_decision
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c44564e-c833-416b-86f4-7ac1c9a1a430
+		sourceLineageTag: days_to_decision
+		summarizeBy: sum
+		sourceColumn: days_to_decision
+
+		annotation SummarizationSetBy = Automatic
+
+	column credit_score_band
+		dataType: string
+		lineageTag: e5b471e3-bd7f-4662-9535-0b9fa4e6bdf7
+		sourceLineageTag: credit_score_band
+		summarizeBy: none
+		sourceColumn: credit_score_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column debt_to_income_ratio
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 68191d7d-9557-438b-a9cc-5c2f4746dab4
+		sourceLineageTag: debt_to_income_ratio
+		summarizeBy: sum
+		sourceColumn: debt_to_income_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column arrears_days
+		dataType: int64
+		formatString: 0
+		lineageTag: 2498a439-2806-4a93-8bc8-3e0a1a47feec
+		sourceLineageTag: arrears_days
+		summarizeBy: sum
+		sourceColumn: arrears_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column hardship_flag
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 346c3e3f-737d-47c2-a0db-3b8b9597e2c2
+		sourceLineageTag: hardship_flag
+		summarizeBy: none
+		sourceColumn: hardship_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_household_income
+		dataType: double
+		lineageTag: aeeccfc1-332d-4f82-b5ae-5528fc651bf9
+		sourceLineageTag: annual_household_income
+		summarizeBy: sum
+		sourceColumn: annual_household_income
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column current_balance
+		dataType: double
+		lineageTag: 4c3213e0-df64-4a76-9fe0-1fd7e9a3b4c6
+		sourceLineageTag: current_balance
+		summarizeBy: sum
+		sourceColumn: current_balance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column application_month
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: edaae760-3ec9-49b7-90c2-7a0d54fa78aa
+		sourceLineageTag: application_month
+		summarizeBy: none
+		sourceColumn: application_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column settlement_month
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 50f652e5-9317-4a76-bb12-9dd6726e21c7
+		sourceLineageTag: settlement_month
+		summarizeBy: none
+		sourceColumn: settlement_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_high_lvr
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e323ee35-0c16-4429-92df-37aea4ea8bc5
+		sourceLineageTag: is_high_lvr
+		summarizeBy: none
+		sourceColumn: is_high_lvr
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_in_arrears
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 33cc607b-af4b-461a-bb80-7cd9a1a7ee43
+		sourceLineageTag: is_in_arrears
+		summarizeBy: none
+		sourceColumn: is_in_arrears
+
+		annotation SummarizationSetBy = Automatic
+
+	column delinquency_band
+		dataType: string
+		lineageTag: b74b67a4-2832-4906-9208-164ebbc6bc4c
+		sourceLineageTag: delinquency_band
+		summarizeBy: none
+		sourceColumn: delinquency_band
+
+		annotation SummarizationSetBy = Automatic
+
+	partition home_loans = entity
+		mode: directLake
+		source
+			entityName: home_loans
+			schemaName: dbo
+			expressionSource: 'DirectLake - HomeLoansLakehouse'
+
