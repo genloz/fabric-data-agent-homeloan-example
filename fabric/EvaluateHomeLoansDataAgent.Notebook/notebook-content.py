@@ -8,12 +8,12 @@
 # META   },
 # META   "dependencies": {
 # META     "lakehouse": {
-# META       "default_lakehouse": "78deb54a-9f5c-4859-828e-d0ea0fc7c2a5",
+# META       "default_lakehouse": "f51fad59-cf24-4b31-aea1-548df7aed3d6",
 # META       "default_lakehouse_name": "HomeLoansLakehouse",
-# META       "default_lakehouse_workspace_id": "",
+# META       "default_lakehouse_workspace_id": "6e20b31f-9ada-4ab5-aad3-f24a973a887a",
 # META       "known_lakehouses": [
 # META         {
-# META           "id": "78deb54a-9f5c-4859-828e-d0ea0fc7c2a5"
+# META           "id": "f51fad59-cf24-4b31-aea1-548df7aed3d6"
 # META         }
 # META       ]
 # META     }
