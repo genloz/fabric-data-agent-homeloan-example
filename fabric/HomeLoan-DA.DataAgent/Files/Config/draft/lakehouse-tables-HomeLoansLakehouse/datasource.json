@@ -588,7 +588,106 @@
               "description": null,
               "children": [
                 {
-                  "id": "d78e99c9-8461-4885-bf09-abdd5061e858",
+                  "id": "a7b50e80-d234-4d90-8a92-afc08a4bfbe0",
+                  "is_selected": false,
+                  "display_name": "home_loans_agent_evaluation_runs",
+                  "type": "lakehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "d8fec1a6-a2f5-46b6-bd4c-ccc014798dfa",
+                      "is_selected": true,
+                      "display_name": "evaluation_suite",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c340df8f-805d-44cb-8380-99cc30230354",
+                      "is_selected": true,
+                      "display_name": "evaluation_id",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "00381a6f-7982-4e15-a7d6-a6b4a07eb29c",
+                      "is_selected": true,
+                      "display_name": "result_table_name",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "4c7e73a6-f7f6-4320-b1c3-dd3dbb0c5841",
+                      "is_selected": true,
+                      "display_name": "data_agent_name",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "0ab97e16-e1fe-47c3-96c5-939043d98a81",
+                      "is_selected": true,
+                      "display_name": "data_agent_stage",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6f719ab3-d0e4-4e9a-a4a1-03d180a83bec",
+                      "is_selected": true,
+                      "display_name": "evaluated_at_utc",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "datetime2",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "cd57f68e-4b4f-48f9-a2e7-4da186748754",
+                      "is_selected": true,
+                      "display_name": "total_count",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "d4188381-1594-4815-891d-355d4d8b432a",
+                      "is_selected": true,
+                      "display_name": "true_count",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "e9f924d8-ae5d-4abe-a59a-5fbd46b29ed4",
+                      "is_selected": true,
+                      "display_name": "false_count",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "5066e238-a406-40e0-b66a-3f3de86f1e46",
+                      "is_selected": true,
+                      "display_name": "unclear_count",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "d7b01b8a-8a01-4b46-9def-df278b42818c",
                   "is_selected": true,
                   "display_name": "home_loans",
                   "type": "lakehouse_tables.table",
